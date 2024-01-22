@@ -1,6 +1,6 @@
 {
   "lighting": "qmk_rgblight",
-  "matrix": {"rows": 5, "cols": 14},
+  "matrix": {"rows": 5, "cols": 15},
   "layouts": {
     "labels": [
       [
