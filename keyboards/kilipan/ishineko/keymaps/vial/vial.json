@@ -1,14 +1,12 @@
 {
   "lighting": "qmk_rgblight",
-  "matrix": {
-      "rows": 5,
-      "cols": 14
-    },
+  "matrix": {"rows": 5, "cols": 14},
   "layouts": {
     "labels": [
       [
         "Bottom row",
-        "7U WK"
+        "7U WK",
+        "6.25 WK"
       ],
       "ISO Enter",
       "Split Left Shift",
@@ -17,7 +15,6 @@
     ],
     "keymap": [      
       [
-          
         {
           "x":2.5
         },
