@@ -4,8 +4,11 @@ RGB_MATRIX_EFFECT(BAND_VAL)
 #    ifdef RGB_MATRIX_CUSTOM_EFFECT_IMPLS
 
 static HSV BAND_VAL_math(HSV hsv, uint8_t i, uint8_t time) {
-    int16_t v = hsv.v - abs(scale8(g_led_config.point[i].x, 228) + 28 - time) * 8;
-    hsv.v     = scale8(v < 0 ? 0 : v, hsv.v);
+    uint8_t v = g_led_config.point[i].x ;
+    //+ scale8((time < 128 ? time : 128 - time  ),128);
+    
+    //hsv.v =  scale8(v*v/255,hsv.v);//scale8( min(255,(s < 0 ? 0 : s)),deltaSat) ;
+    hsv.v =  v;
     return hsv;
 }
 
